@@ -1,0 +1,53 @@
+GET http://127.0.0.1:10001/movies/
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IlRFU1QiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NTM3NDUyOTF9.IqHXDaF2XDEHTcgSc4dJbv4yVTjMvbjsxKOEC6jA2SA
+
+###
+
+POST http://localhost:10001/auth/
+Content-Type: application/json
+
+{
+  "username":"UPDATE",
+  "password":"qwe12"
+}
+
+###
+
+PUT http://localhost:10001/auth/
+Content-Type: application/json
+
+{
+    "refresh_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IlJFRlJFU0giLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NjQ5NzY4NzV9.NwQBoDQxrgeEmkWd0gErHwp98StsKlfiKy5F9oh555A"
+}
+
+###
+PUT http://localhost:10001/users/10
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6IlVQREFURSIsInJvbGUiOiJhZG1pbiIsImV4cCI6MTY1Mzc0NzQ1MH0.xTzmuvUcCnvaNcZJOqxJSvxq54hWfPjEPh6JzHNv3TA
+
+{
+  "username":"UPDATEEED",
+  "password":"12121212121",
+  "role":"admin"
+}
+
+###
+
+
+POST http://localhost:10001/users/
+Content-Type: application/json
+
+{
+  "username":"UPDATE",
+  "password":"qwe12",
+  "role": "admin"
+}
+
+###
+
+DELETE http://localhost:10001/users/1
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6Ik1ha3MiLCJyb2xlIjoiYWRtaW4iLCJleHAiOjE2NTM3NDU4MTl9.MUc_Hz2XOp2cQ_b73BqkirAIXe2dzXndS88HiH26OpQ
+
+###
